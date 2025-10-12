@@ -3,8 +3,9 @@ pragma solidity ^0.8.18;
 
 contract FundMe{
 
+    uint256 public minimumUsd = 5;
     function fund() public payable {
-        require(msg.value >= 1e18, "did't send enough EHT!");
+        require(msg.value >= minimumUsd, "did't send enough $!");
     }
 
     // function withdraw() public {}
