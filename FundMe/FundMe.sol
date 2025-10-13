@@ -8,5 +8,9 @@ contract FundMe{
         require(msg.value >= minimumUsd, "did't send enough $!");
     }
 
+    function getPrice() public {}
+
+    function getConversionRate() public {}
+    
     // function withdraw() public {}
 }
